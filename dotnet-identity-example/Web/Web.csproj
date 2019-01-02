@@ -6,6 +6,19 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Migrations\20181219135744_InitialCreate.cs" />
+    <Compile Remove="Migrations\20181219135744_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20190102133126_CustomNames.cs" />
+    <Compile Remove="Migrations\20190102133126_CustomNames.Designer.cs" />
+    <Compile Remove="Migrations\20190102135053_add-migraton CustomNames.cs" />
+    <Compile Remove="Migrations\20190102135053_add-migraton CustomNames.Designer.cs" />
+    <Compile Remove="Migrations\20190102135250_CustomNames.cs" />
+    <Compile Remove="Migrations\20190102135250_CustomNames.Designer.cs" />
+    <Compile Remove="Migrations\20190102141256_InitialWithCustomNames.cs" />
+    <Compile Remove="Migrations\20190102141256_InitialWithCustomNames.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="wwwroot\" />
   </ItemGroup>
 
