@@ -14,6 +14,11 @@ namespace Web.Controllers
     [Route("api/auth")]
     public class AuthController : Controller
     {
+
+        String uName = "janedoe@example.com";
+        String pw = "5ESTdYB5cyYwA2dKhJqyjPYnKUc&45Ydw^gz^jy&FCV3gxpmDPdaDmxpMkhpp&9TRadU%wQ2TUge!TsYXsh77Qmauan3PEG8!6EP";
+
+
         private readonly SignInManager<ApplicationUser> _signInManager;
         public AuthController(SignInManager<ApplicationUser> signInManager)
         {
@@ -23,15 +28,16 @@ namespace Web.Controllers
         [HttpPost("login")]
         public async Task<IActionResult> Login([FromBody]LoginViewModel vm)
         {
+            // Validate the requests
             if (!ModelState.IsValid)
             {
-                return BadRequest();
+                return BadRequest(); // TODO: Return error description
             }
 
             var result = await _signInManager.PasswordSignInAsync(
                 userName: vm.Username,
                 password: vm.Password,
-                isPersistent: true,
+                isPersistent: true, // TODO: Get this from the viewmodel
                 lockoutOnFailure: true
             );
 
@@ -58,6 +64,5 @@ namespace Web.Controllers
             await _signInManager.SignOutAsync();
             return Ok();
         }
-
     }
 }
