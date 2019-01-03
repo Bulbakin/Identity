@@ -23,6 +23,9 @@ namespace Web
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
+
+            modelBuilder.Entity<ApplicationUser>().ToTable("Users");
+            modelBuilder.Entity<IdentityRole>().ToTable("Role");
         }
     }
 }

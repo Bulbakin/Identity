@@ -16,6 +16,14 @@
     <Compile Remove="Migrations\20190102135250_CustomNames.Designer.cs" />
     <Compile Remove="Migrations\20190102141256_InitialWithCustomNames.cs" />
     <Compile Remove="Migrations\20190102141256_InitialWithCustomNames.Designer.cs" />
+    <Compile Remove="Migrations\20190102141746_InitialCreate.cs" />
+    <Compile Remove="Migrations\20190102141746_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20190103120054_CustomName.cs" />
+    <Compile Remove="Migrations\20190103120054_CustomName.Designer.cs" />
+    <Compile Remove="Migrations\20190103120454_InitialCreate.cs" />
+    <Compile Remove="Migrations\20190103120454_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20190103121134_CustomNames.cs" />
+    <Compile Remove="Migrations\20190103121134_CustomNames.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>
