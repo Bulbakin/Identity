@@ -14,10 +14,9 @@ namespace Web.Controllers
     [Route("api/auth")]
     public class AuthController : Controller
     {
-
+        
         String uName = "janedoe@example.com";
         String pw = "5ESTdYB5cyYwA2dKhJqyjPYnKUc&45Ydw^gz^jy&FCV3gxpmDPdaDmxpMkhpp&9TRadU%wQ2TUge!TsYXsh77Qmauan3PEG8!6EP";
-
 
         private readonly SignInManager<ApplicationUser> _signInManager;
         public AuthController(SignInManager<ApplicationUser> signInManager)
